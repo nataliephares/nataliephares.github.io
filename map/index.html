@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Nataliephares.github.io by nataliephares</title>
+
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+<link rel="stylesheet" href="../stylesheets/leaflet.awesome-markers.css">
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.0/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="without-description">
+        <h1>Nataliephares.github.io</h1>
+        <p></p>
+        <p class="view"><a href="https://github.com/nataliephares">View the Project on GitHub <small>nataliephares</small></a></p>
+        <ul>
+          <li class="single"><a href="https://github.com/nataliephares/nataliephares.github.io">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <div id="map" style="width: 800px; height: 600px"></div>
+
+<script>
+  // create Leaflet map object and set view's center and zoom level
+  var map = L.map('map').setView([38, -115], 7);        
+
+  // add background map layer
+  var Esri_NatGeoWorldMap = L.tileLayer(
+    'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
+  Esri_NatGeoWorldMap.addTo(map)
+</script>
+      </section>
+    </div>
+    <footer>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
